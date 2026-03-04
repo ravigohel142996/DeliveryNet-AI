@@ -102,7 +102,7 @@ class FleetManager:
         self._fleet_cfg = fleet_cfg
         self._sim_cfg = sim_cfg
         self._warehouses = warehouses
-        self._rng = random.Random(fleet_cfg.num_vehicles)
+        self._rng = random.Random(sim_cfg.random_seed)
 
         self.vehicles: Dict[str, Vehicle] = {}
         self.orders: Dict[str, DeliveryOrder] = {}

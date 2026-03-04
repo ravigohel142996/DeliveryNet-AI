@@ -85,7 +85,7 @@ def render_sidebar() -> SimulationControls:
         help="Number of simulation ticks to run.",
     )
 
-    st.sidebar.subheader("🔀 Route Optimiser")
+    st.sidebar.subheader("🔀 Route Optimizer")
     time_weight = st.sidebar.slider(
         "Time Weight",
         min_value=0.0,

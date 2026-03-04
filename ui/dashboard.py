@@ -112,11 +112,11 @@ def render_dashboard(controls: SimulationControls) -> None:
 
     # Header
     st.markdown(
-        "## 🚚 DeliveryNet AI — Intelligent Logistics Route Optimisation",
+        "## 🚚 DeliveryNet AI — Intelligent Logistics Route Optimization",
         unsafe_allow_html=False,
     )
     st.caption(
-        "AI-powered city delivery simulation · Traffic prediction · Route optimisation · Fleet management"
+        "AI-powered city delivery simulation · Traffic prediction · Route optimization · Fleet management"
     )
     st.markdown("---")
 

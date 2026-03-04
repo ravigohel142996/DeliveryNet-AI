@@ -44,7 +44,7 @@ def build_network_figure(
         lat1, lon1 = graph.nodes[u]["lat"], graph.nodes[u]["lon"]
         lat2, lon2 = graph.nodes[v]["lat"], graph.nodes[v]["lon"]
         congestion = data.get("congestion", 1.0)
-        colour = _congestion_colour(congestion)
+        colour = _congestion_color(congestion)
         fig.add_trace(
             go.Scattergeo(
                 lon=[lon1, lon2, None],
@@ -318,7 +318,7 @@ def build_order_status_pie(
 # Private helpers
 # ---------------------------------------------------------------------------
 
-def _congestion_colour(factor: float) -> str:
+def _congestion_color(factor: float) -> str:
     """Map 1.0–3.5 congestion factor to a hex colour (green→red)."""
     norm = min(max((factor - 1.0) / 2.5, 0.0), 1.0)
     r = int(255 * norm)
